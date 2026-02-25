@@ -67,14 +67,14 @@ const Home = () => {
             journal: "ISPRS International Journal of Geo-Information (MDPI)",
             date: "Feb 20, 2025",
             url: "https://www.mdpi.com/2220-9964/14/3/96",
-            pdf: "/documents/papers/ijgi-14-00096-v2.pdf"
+            pdf: "/public/documents/papers/ijgi-14-00096-v2.pdf"
         },
         {
             title: "Diagnosis of the Situation of the Land Administration System in Ibero-America",
             journal: "Land (MDPI)",
             date: "Jun 30, 2025",
             url: "https://www.mdpi.com/2073-445X/14/7/1376",
-            pdf: "/documents/papers/land-14-01376-v2.pdf"
+            pdf: "/public/documents/papers/land-14-01376-v2.pdf"
         }
     ];
 
@@ -160,7 +160,7 @@ const Home = () => {
                             Hire Me
                         </button>
                         <a
-                            href="/documents/cv/CV_QUIZACRISTHIAN.pdf"
+                            href="/public/documents/cv/CV_QUIZACRISTHIAN.pdf"
                             download
                             className="glass text-white px-8 py-4 rounded-2xl font-black uppercase tracking-wider flex items-center gap-2 hover:bg-white/10 transition-all border border-white/10"
                         >

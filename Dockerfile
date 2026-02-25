@@ -9,5 +9,5 @@ RUN npm run build
 # Stage 2
 FROM alpine
 WORKDIR /app
-COPY --from=build-stage /app/dist /app/dist
-CMD ["cp", "-rv", "/app/dist/.", "/app/dist"]
+COPY --from=build-stage /app/dist /app/static
+CMD ["sh", "-c", "sleep infinity"]
