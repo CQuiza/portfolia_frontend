@@ -26,7 +26,8 @@ export const AuthProvider = ({ children }) => {
             formData.append('username', username);
             formData.append('password', password);
 
-            const response = await axios.post('http://localhost:8000/auth/token', formData);
+            const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+            const response = await axios.post(`${baseUrl}/auth/token`, formData);
             setToken(response.data.access_token);
             return { success: true };
         } catch (error) {
