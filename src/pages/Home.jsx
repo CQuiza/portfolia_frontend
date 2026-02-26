@@ -118,24 +118,26 @@ const Home = () => {
             {/* Hero Section */}
             <section id="hero" className="min-h-[80vh] flex flex-col lg:flex-row items-center gap-16 justify-center relative">
                 {/* Large Glowing Logo */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="absolute -top-24 left-4 lg:left-12 z-0 pointer-events-none"
-                >
-                    <div className="relative group">
-                        <img
-                            src="/logo.png"
-                            alt="Large Logo"
-                            className="w-48 h-auto mix-blend-screen opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                        />
-                        {/* Glow Effect */}
-                        <div className="absolute inset-0 bg-neon-cyan/20 blur-[60px] rounded-full -z-10 animate-pulse"></div>
-                    </div>
-                </motion.div>
 
-                <div className="flex-1 space-y-8">
+
+                <div className="flex-1 space-y-8 relative">
+                    {/* Large Glowing Logo aligned with text */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="absolute -top-44 left-0 z-0 pointer-events-none"
+                    >
+                        <div className="relative group">
+                            <img
+                                src="/logo.png"
+                                alt="Large Logo"
+                                className="w-32 h-auto mix-blend-screen opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                            />
+                            {/* Glow Effect */}
+                            <div className="absolute inset-0 bg-neon-cyan/20 blur-[50px] rounded-full -z-10 animate-pulse"></div>
+                        </div>
+                    </motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
