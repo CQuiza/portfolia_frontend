@@ -122,7 +122,7 @@ const Home = () => {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="absolute -top-20 left-0 z-0 pointer-events-none"
+                    className="absolute -top-24 left-4 lg:left-12 z-0 pointer-events-none"
                 >
                     <div className="relative group">
                         <img
