@@ -116,7 +116,25 @@ const Home = () => {
         <div className="pt-32 pb-20 px-6 max-w-7xl mx-auto space-y-40">
 
             {/* Hero Section */}
-            <section id="hero" className="min-h-[80vh] flex flex-col lg:flex-row items-center gap-16 justify-center">
+            <section id="hero" className="min-h-[80vh] flex flex-col lg:flex-row items-center gap-16 justify-center relative">
+                {/* Large Glowing Logo */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="absolute -top-20 left-0 z-0 pointer-events-none"
+                >
+                    <div className="relative group">
+                        <img
+                            src="/logo.png"
+                            alt="Large Logo"
+                            className="w-48 h-auto mix-blend-screen opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                        />
+                        {/* Glow Effect */}
+                        <div className="absolute inset-0 bg-neon-cyan/20 blur-[60px] rounded-full -z-10 animate-pulse"></div>
+                    </div>
+                </motion.div>
+
                 <div className="flex-1 space-y-8">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}

@@ -17,7 +17,6 @@ const Header = () => {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex justify-center">
             <nav className="glass py-3 px-8 rounded-full flex items-center gap-8 text-slate-300 text-sm font-medium">
-                <img src="/logo.png" alt="Logo" className="h-6 w-auto mr-2" />
                 <NavLink to="#hero">Home</NavLink>
                 <NavLink to="#projects">Projects</NavLink>
                 <NavLink to="#skills">Skills</NavLink>
