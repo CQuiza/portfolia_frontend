@@ -126,7 +126,7 @@ const Home = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="absolute -top-44 left-0 z-0 pointer-events-none"
+                        className="hidden md:block absolute -top-44 left-0 z-0 pointer-events-none"
                     >
                         <div className="relative group">
                             <img
@@ -216,7 +216,7 @@ const Home = () => {
             </AnimatePresence>
 
             {/* Projects Section */}
-            <section id="projects" className="space-y-12">
+            <section id="projects" className="space-y-12 scroll-mt-32">
                 <div className="flex flex-col md:flex-row justify-between items-center md:items-end gap-6">
                     <div className="text-center md:text-left">
                         <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
@@ -265,7 +265,7 @@ const Home = () => {
             </section>
 
             {/* Skills Section */}
-            <section id="skills" className="space-y-12">
+            <section id="skills" className="space-y-12 scroll-mt-32">
                 <div className="text-center md:text-left">
                     <h2 className="text-4xl font-bold text-white mb-4">Technical Stack</h2>
                     <div className="w-20 h-1.5 bg-neon-cyan rounded-full shadow-neon-cyan mx-auto md:mx-0"></div>
@@ -297,7 +297,7 @@ const Home = () => {
             </section>
 
             {/* Research Section */}
-            <section id="research" className="space-y-12">
+            <section id="research" className="space-y-12 scroll-mt-32">
                 <div className="text-center md:text-left">
                     <h2 className="text-4xl font-bold text-white mb-4 flex items-center gap-4">
                         <BookOpen className="text-neon-cyan" /> Research & Publications
@@ -331,7 +331,7 @@ const Home = () => {
             </section>
 
             {/* Contact Section */}
-            <section id="contact" className="space-y-12 pb-20">
+            <section id="contact" className="space-y-12 pb-20 scroll-mt-32">
                 <div className="glass-cyan p-12 rounded-[3rem] border border-neon-cyan/20 relative overflow-hidden text-center md:text-left">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-neon-cyan/5 blur-[100px] -mr-32 -mt-32"></div>
 
